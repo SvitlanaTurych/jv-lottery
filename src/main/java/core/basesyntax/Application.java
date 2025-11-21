@@ -4,16 +4,15 @@ import java.util.Random;
 
 public class Application {
     public static void main(String[] args) {
+        final int count = 3;
+
         Random rnd = new Random();
         ColorSupplier supplier = new ColorSupplier();
         Lottery lottery = new Lottery(rnd, supplier);
 
-        Ball ball1 = lottery.getrandomBall();
-        Ball ball2 = lottery.getrandomBall();
-        Ball ball3 = lottery.getrandomBall();
-
-        System.out.println(ball1);
-        System.out.println(ball2);
-        System.out.println(ball3);
+        for  (int i = 0; i < count; i++) {
+            Ball ball = lottery.getrandomBall();
+            System.out.println(ball);
+        }
     }
 }
