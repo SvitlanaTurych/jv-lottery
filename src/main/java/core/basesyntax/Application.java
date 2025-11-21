@@ -7,11 +7,11 @@ public class Application {
         final int count = 3;
 
         Random rnd = new Random();
-        ColorSupplier supplier = new ColorSupplier();
+        ColorSupplier supplier = new ColorSupplier(rnd);
         Lottery lottery = new Lottery(rnd, supplier);
 
         for (int i = 0; i < count; i++) {
-            Ball ball = lottery.getrandomBall();
+            Ball ball = lottery.getRandomBall();
             System.out.println(ball);
         }
     }
