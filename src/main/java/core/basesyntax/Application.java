@@ -10,7 +10,7 @@ public class Application {
         ColorSupplier supplier = new ColorSupplier();
         Lottery lottery = new Lottery(rnd, supplier);
 
-        for  (int i = 0; i < count; i++) {
+        for (int i = 0; i < count; i++) {
             Ball ball = lottery.getrandomBall();
             System.out.println(ball);
         }

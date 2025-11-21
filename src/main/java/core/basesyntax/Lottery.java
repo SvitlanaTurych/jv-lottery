@@ -6,6 +6,7 @@ public class Lottery {
     private final Random random;
     private final int count = 101;
     private final ColorSupplier colorSupplier;
+
     public Lottery(Random rnd, ColorSupplier colorSupplier) {
         this.colorSupplier = colorSupplier;
         this.random = rnd;
